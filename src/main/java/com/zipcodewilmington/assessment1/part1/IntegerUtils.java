@@ -9,8 +9,15 @@ public class IntegerUtils {
     /**
      * @param n integer value input by client
      * @return the sum of all integers between 0 and not including `n`
+     *
      */
     public static Integer getSumOfN(Integer n) {
+
+     //   int sum = 0;
+      //  int i= 0;
+      //  for (i = 0; i < n; i++) {
+      //      sum += i;
+
         return null;
     }
 
