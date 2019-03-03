@@ -41,14 +41,10 @@ public class IntegerUtils {
 
         String value = Integer.toString(val);
 
-        String reversed = "";
+        String reversed = BasicStringUtils.reverse(value);
 
-        for (int i = value.length() - 1; i >= 0; i--) {
+        return Integer.valueOf(reversed);
 
-           // reversed = reversed + charAt(i);
-        }
-
-        return null;
 
     }
 }

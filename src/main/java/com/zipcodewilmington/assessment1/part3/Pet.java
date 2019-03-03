@@ -4,11 +4,15 @@ package com.zipcodewilmington.assessment1.part3;
  * Created by leon on 2/16/18.
  */
 public abstract class Pet implements Animal {
+
+
+
     /**
      * nullary constructor
      * by default, pet has age of 0; name of "";
      */
     public Pet() {
+
     }
 
     /**
@@ -50,6 +54,8 @@ public abstract class Pet implements Animal {
      * ensure this instance of `Pet` is added to the owner's composite `pets` list
      */
     public void setOwner(PetOwner newPetOwner) {
+
+
     }
 
     /**

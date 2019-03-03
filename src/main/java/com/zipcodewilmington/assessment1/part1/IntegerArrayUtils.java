@@ -14,7 +14,7 @@ public class IntegerArrayUtils {
 
         int sum = 0;
         for (int i = 0; i < intArray.length; i++) {
-            sum = sum* intArray[i];
+            sum = sum + intArray[i];
         }
 
         return sum;

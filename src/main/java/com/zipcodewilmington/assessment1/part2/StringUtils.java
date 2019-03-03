@@ -17,6 +17,7 @@ public class StringUtils {
     public static String[] getWords(String sentence) {
 
         ArrayList<String> arrayListPalabras = new ArrayList<>();
+
         String palabra = "";
         String letra="";
         for (int i = 0; i < sentence.length(); i++) {
