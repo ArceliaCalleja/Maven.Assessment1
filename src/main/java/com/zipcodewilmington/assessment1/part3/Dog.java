@@ -4,9 +4,6 @@ package com.zipcodewilmington.assessment1.part3;
  * Created by leon on 2/16/18.
  */
 public class Dog extends Pet {
-    private String name;
-    private Integer age;
-    private PetOwner owner;
 
     /**
      * @param name name of this Dog
@@ -14,9 +11,7 @@ public class Dog extends Pet {
      */
     public Dog(String name, Integer age) {
 
-        this.name = name;
-        this.age = age;
-
+        super(name,age);
 
     }
 
@@ -26,7 +21,7 @@ public class Dog extends Pet {
      */
     public Dog(Integer age) {
 
-        this.age = age;
+        super (age);
         this.name = "Dog name";
 
     }
@@ -36,8 +31,7 @@ public class Dog extends Pet {
      */
     public Dog(String name) {
 
-        this.name = name;
-        this.age = 0;
+       super(name);
 
 
     }
@@ -49,44 +43,17 @@ public class Dog extends Pet {
      * age is 0
      */
     public Dog() {
+        super();
+        this.name="Dog name";
 
-    this.age = 0;
-    this.name = "Dog name";
-    this.owner = null;
     }
 
 
-    public PetOwner getOwner() {
-        return owner;
-    }
-
-
-    public void setOwner(PetOwner owner) {
-        this.owner = owner;
-    }
 
     /**
      * @return bark as a string
      */
 
-
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
 
     public String speak() {
         return "Bark";
